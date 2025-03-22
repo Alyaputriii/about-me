@@ -16,7 +16,7 @@
     }
 
     body {
-      font-family: poppins sans-serif;
+      font-family: poppins, sans-serif;
       margin: 0;
       background-color: var(--bg-light);
       color: var(--text-dark);
@@ -32,24 +32,32 @@
 
     nav {
       display: flex;
-      justify-content: right;
+      justify-content: center; 
+      align-items: center; 
+      flex-wrap: nowrap; 
       background-color: var(--accent);
-      padding: 20px;
-      position: sticky;
+      padding: 20px 20px;
+      position: fixed;
       top: 0;
-      z-index: 100;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      overflow: hidden; 
+      white-space: nowrap;
     }
 
     nav button {
       background: none;
       border: none;
-      padding: 10px 20px;
+      padding: 10px 15px; 
       color: white;
       cursor: pointer;
-      font-size: 20px;
+      font-size: 18px; 
       font-weight: bold;
       border-radius: 10px;
+      white-space: nowrap; 
     }
+
 
     nav button:hover {
       background-color: #a4d2ef;
@@ -59,7 +67,7 @@
     main {
       max-width: 900px;
       margin: auto;
-      padding: 20px;
+      padding: 100px 20px 20px;
     }
 
     section {
@@ -110,7 +118,7 @@
   </nav>
 
   <main>
-    <section id="Home">
+    <section id="home">
         <h1>Hallo all!</h1>
         <p><b><span style="font-size: 27px;">Alya Putri Rahmadani</span></b></p>
         <p><span style="font-size: 20px;">I'm a Software engineering student in Polytechnic State Batam</span></p>
